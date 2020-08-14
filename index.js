@@ -241,7 +241,7 @@ function get20s(array, min, max){
     let deathYear = array[i].years.slice(5,4)
 
   
-  if (birthYear > min && deathYear < max);{
+  if (birthYear > min && deathYear < max){
  //send person to artistTwenty
   artistTwenty.push(array[i].name)
     }
@@ -249,7 +249,7 @@ function get20s(array, min, max){
   return artistTwenty
 }
 
-console.log(get20s(artists, 1990, 2001));
+console.log(get20s(artists, 1990, 2001))
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -301,16 +301,15 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(array){
  let hundredPlus = []
  for (let i; i < array.length; i++){
-   let pieces = array[i].paintings.slice(0)
-   if (pieces > 100){
+   let pieces = array[i].paintings
+   if (pieces > 100);{
     hundredPlus.push(array[i].name)
   }
  }
- 
 return hundredPlus
 }
 
-console.log(lotsOfArt(artists));
+console.log(lotsOfArt(artists))
 
 
 // 🎨🎨 STRETCH 🎨🎨//
